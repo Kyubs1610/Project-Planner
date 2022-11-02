@@ -2,20 +2,46 @@
 /* Include the padding and border in an element's total width and height */
 * {
     box-sizing: border-box;
+    
   }
   
+  body{
+    background-color:#001A2B;
+  }
   /* Remove margins and padding from the list */
   ul {
     margin: 0;
     padding: 0;
   }
   
+/* clock design */
+.container{
+  display:flex;
+  justify-content:end;
+ 
+  
+}
+
+.box{
+  border-radius: 360px;
+  border:  0px solid rgb(21, 20, 20);
+  background-color: #0f3f91;
+  background-image: linear-gradient(180deg, #0f3f91 0%, #3489e6 44%, #e4a387 100%);
+   display:flex;
+  flex-direction: column;
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  margin: 30px;
+  color: azure;
+}
+
   /* Style the list items */
   ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: #e4a387;
     font-size: 18px;
     transition: 0.2s;
   
@@ -28,7 +54,7 @@
   
   /* Set all odd list items to a different color (zebra-stripes) */
   ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #3489e6;
   }
   
   /* Darker background-color on hover */
@@ -53,24 +79,15 @@
    
   }
 
-  /* add a "deleted" class */
-  ul li.deleted::after {
-    content: '🗑️';
-    position: absolute;
-    top: 10px;
-    right: 15px;
-   
-  }
 
-  .hide{
-    display : none;
-  }
   
   
   /* Style the header */
   .header {
-    background-color: #0753b0;
-    padding: 30px 40px;
+    background-image: url('./Asset/Fox.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -12em;
     color: white;
     text-align: center;
   }
@@ -84,9 +101,11 @@
   
   /* Style the input */
   input {
+    background: transparent;
+    border: none;
+    color:#888;
     margin: 0;
     border: none;
-    border-radius: 0;
     width: 75%;
     padding: 10px;
     float: left;
@@ -101,29 +120,31 @@
     padding: 10px;
     float: left;
     font-size: 16px;
+    background: transparent;
+    border: none;
 
   }
   
   /* Style the "Add" button */
   #addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    border-radius: 100%;
+    color: rgb(249, 247, 247);
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    background-color: #0f3f91;
+    background-image: linear-gradient(180deg, #0f3f91 0%, #3489e6 44%, #e4a387 100%);
+    
   }
   
   #addBtn:hover {
-    background-color: #bbb;
+    background-color: rgb(231, 24, 24);
   }
   #myToDo {
 
-color : #04b7f8
+color : #e4a387;
 
   }
 

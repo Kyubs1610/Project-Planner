@@ -3,6 +3,14 @@ let description = document.getElementById('description')
 let date = document.getElementById('dueDate')
 let btn = document.getElementById('addBtn')
 
+// put the time of the day on the page
+const getBxlTime =  () => { 
+    document.getElementById('bxlTime').innerHTML=
+    new Date ().toLocaleString("fr-BE",{timeZone:'Europe/Brussels',timeStyle :'medium', hourCycle:'h24'}) 
+    };
+    getBxlTime()
+    setInterval(getBxlTime,1000);
+
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
