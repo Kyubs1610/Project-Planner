@@ -101,11 +101,11 @@
   
   /* Style the input */
   input {
-    background: transparent;
-    border: none;
+    opacity: .3;
+    
     color:#888;
     margin: 0;
-    border: none;
+    
     width: 75%;
     padding: 10px;
     float: left;
@@ -120,9 +120,9 @@
     padding: 10px;
     float: left;
     font-size: 16px;
-    background: transparent;
-    border: none;
-
+    opacity: .3;
+    
+    color:#888;
   }
   
   /* Style the "Add" button */
