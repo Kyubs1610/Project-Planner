@@ -127,7 +127,7 @@
   
   /* Style the "Add" button */
   #addBtn {
-    border-radius: 100%;
+    border-radius: 360px;
     color: rgb(249, 247, 247);
     float: left;
     text-align: center;
@@ -145,6 +145,17 @@
   #myToDo {
 
 color : #e4a387;
+
+  }
+  .removeTask{
+    border-radius: 360px;
+    color: rgb(249, 247, 247);
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #0f3f91;
+    background-image: linear-gradient(180deg, #0f3f91 0%, #3489e6 44%, #e4a387 100%);
 
   }
 
