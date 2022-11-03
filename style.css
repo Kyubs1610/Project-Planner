@@ -14,6 +14,13 @@
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap:10px;
+
   }
   
 /* clock design */
@@ -29,11 +36,17 @@
   padding: 20px;
   margin: 20px;
   color: azure;
+  float: left; 
+  margin-top: -180px;
  
 }
 .inputArea{
   padding: 20px;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -87,17 +100,15 @@
    
   }
 
-
-  
-  
   /* Style the header */
   .header {
     background-image: url('./Asset/Fox.jpg');
     background-size:cover;
     background-repeat: no-repeat;
-    background-position-y: -12em;
+    background-position-y: -17em;
     color: white;
     text-align: center;
+   
   }
   
   /* Clear floats after the header */
@@ -134,9 +145,9 @@
   
     display: flex;
     flex-direction: row;
-    float: left;
-    margin-left: 20px;
-    gap: 15px;
+    justify-content: center;
+    gap:15px;
+    
     
   }
   
@@ -173,3 +184,10 @@ color : #e4a387;
     padding:7px ;
   }
 
+  li{
+    display:flex;
+    justify-content: center;
+    
+    border-radius: 30px;
+    align-items: center;
+  }

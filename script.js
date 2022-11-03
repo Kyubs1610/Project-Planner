@@ -45,7 +45,7 @@ btn.addEventListener("click", (e) => {
         const hours = Math.floor((timer %(1000 * 60 * 60 * 24))/(1000*60*60))
         const minutes = Math.floor((timer %(1000 * 60 * 60))/(1000*60))
         
-        const text = `${days}j ${hours}h ${minutes}m  left until the end of your project`
+        const text = `${days}j ${hours}h ${minutes}m  left until the end of your project. `
 
     li.innerText = task.value +  '\n' + description.value + '\n' + text
 
@@ -63,3 +63,5 @@ removeTask.addEventListener('click', function(){
     els[x].style.display = 'none';
     
 })
+
+
