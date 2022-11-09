@@ -3,6 +3,9 @@ let description = document.getElementById('description')
 let date = document.getElementById('dueDate')
 let btn = document.getElementById('addBtn')
 
+const taskList = []
+
+
 // put the time of the day on the page
 const getBxlTime =  () => { 
     document.getElementById('bxlTime').innerHTML=
@@ -21,7 +24,7 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 
-
+const generateCard = 
 btn.addEventListener("click", (e) => { 
 
     if(task.value.length == 0){
@@ -47,10 +50,14 @@ btn.addEventListener("click", (e) => {
         
         const text = `${days}j ${hours}h ${minutes}m  left until the end of your project. `
 
-    li.innerText = task.value +  '\n' + description.value + '\n' + text
+        
 
+    li.innerText = task.value +  '\n' + description.value + '\n' + text
+    li.style.fontSize = "x-large";
+    const remember = localStorage.setItem("lastValue", li.innerText)
     }
 }
+
 getTimer();
 
 });
@@ -65,3 +72,25 @@ removeTask.addEventListener('click', function(){
 })
 
 
+
+// const sorting = document.getElementById("sorting")
+
+
+// sorting.addEventListener("change", function() {
+//     if(sorting.value == "urgent" )
+//      {  document.getElementById(myUL).innerHTML = ""
+//         generateCard(taskList.sort((a, b) => a.title.localeCompare(b.title)))
+        
+//     }
+//     else(sorting.value == "name" )
+//     {   document.getElementById("myUL").innerHTML = ""
+//         generateCard(taskList.sort(sortFunction))
+//     }
+// });
+
+// const sortFunction  = (a,b)  =>  {  
+//     let dateA = new Date(a.due_date).getTime()
+//     let dateB = new Date(b.due_date).getTime()
+//     return dateA > dateB ? 1 : -1;  
+// }
+// console.log("🦊 ~ taskList", taskList)
