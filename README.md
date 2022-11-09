@@ -1,3 +1,3 @@
 # Project-Planner
 
-![Screenshot](View.PNG)
+![Screenshot](view.PNG)
